@@ -1,10 +1,9 @@
 <h1> Your Results :</h1>
-
-<ul>
-  <li>Grid : <%= @grid %></li>
-  <li> Your word : <%= @attempt %></li>
-  <li><%= @result %></li>
-</ul>
+<h2>Grid : <%= @grid %></h2>
+<h2> Your word : <%= @attempt %></h2>
+<h2> Time taken : <%= @result[:time].round(1) %> seconds</h2>
+<h2>Score : <%= @result[:score] %></h2>
+<h2><%= @result[:message] %></h2>
 
 
 <%= link_to "Play again", game_path %>

@@ -1,3 +1,6 @@
+require 'json'
+require 'open-uri'
+
 class PlayController < ApplicationController
   def game
     @grid = Array.new(9) { ('A'..'Z').to_a.sample }
